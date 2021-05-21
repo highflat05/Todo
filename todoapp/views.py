@@ -9,7 +9,7 @@ from .models import Todo
 # HTMLファイルを表示させる
 def todoapp(request):
   todo_items = Todo.objects.all()
-  return render(request, 'Todo.html', {'todo_items': todo_items})
+  return render(request, 'index.html', {'todo_items': todo_items})
 
 # 新しいtodoタスクが入力されたら保存
 # HTMLにリダイレクト
